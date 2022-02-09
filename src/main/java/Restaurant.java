@@ -63,7 +63,7 @@ public class Restaurant {
     }
 
     public int getOrderValue(List<Item> order) {
-        return -1;
+        return order.stream().map(Item::getPrice).reduce(0, Integer::sum);
     }
 
     public String getName() {
