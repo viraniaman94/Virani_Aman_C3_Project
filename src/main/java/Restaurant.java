@@ -62,6 +62,10 @@ public class Restaurant {
 
     }
 
+    public int getOrderValue(List<Item> order) {
+        return -1;
+    }
+
     public String getName() {
         return name;
     }
